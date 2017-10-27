@@ -1,5 +1,0 @@
-package 原型模式;
-
-public class Test implements Cloneable{
-
-}

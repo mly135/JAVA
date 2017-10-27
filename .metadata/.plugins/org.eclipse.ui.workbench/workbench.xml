@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="66" version="2.0">
 <workbenchAdvisor/>
 <window height="1034" maximized="true" width="960" x="641" y="23">
 <fastViewData fastViewLocation="1024"/>
@@ -162,9 +162,8 @@
 <view id="com.thunisoft.artery.plugin.ui.extension.views.outline.OutlineView" partName="表单结构大纲"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Warnings (8 items)"/>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
+<expanded>
+<category IMemento.internal.id="Warnings (11 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -404,7 +403,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
 <alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
@@ -849,33 +848,24 @@
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.dltk.ui.ScriptExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.76258206" ratioLeft="697" ratioRight="217" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.76258206" ratioLeft="697" ratioRight="217" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="com.genuitec.javascript.debug.ui.scriptView" label="JavaScript Scripts Inspector"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
@@ -887,8 +877,7 @@
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -896,26 +885,20 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.11154345" ratioLeft="86" ratioRight="685" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.atf.mozilla.ide.ui.views.inspector" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.atf.mozilla.ide.debug.ui.scriptview" label="LabelNotFound"/>
 <page content="org.eclipse.dltk.debug.ui.ScriptDisplayView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
@@ -1395,46 +1378,20 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/MyBatiesTest/src/BlogMapper.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/MyBatiesTest/src/IBlogMapper.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MyBatiesTest/src/test/BlogMapper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Test/src/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analogy_Sping_AOP/src/spring/test/Sample1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analogy_Sping_AOP/src/user/com/bjsxt/AddUser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analogy_Sping_AOP/src/user/com/bjsxt/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analogy_Sping_AOP/src/user/dao/IUserDao.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analogy_Sping_AOP/src/user/dao/impl/UserDaoImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analogy_Sping_AOP/src/user/service/IUserService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analogy_Sping_AOP/src/user/service/impl/UserServiceImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analogy_Sping_AOP/src/user/com/bjsxt/User.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sping_AOP_Annotation/src/spring/test/Sample1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sping_AOP_Annotation/src/user/aop/AopTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Sping_AOP_Annotation/src/user/aop/IAopTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" path="/MyBatiesTest/src/config.properties"/>
 </editors>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="679" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="717" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="886" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="598" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="640" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="679" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="717" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="886" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="598" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="640" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="679" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="800" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="886" y="0"/>
-</item>
 <item historyLabel="Test.java" index="0">
 <position info="not_deleted" x="598" y="0"/>
 </item>
@@ -1531,7 +1488,46 @@
 <item historyLabel="BlogMapper.java" index="17">
 <position info="not_deleted" x="30" y="10"/>
 </item>
-<item active="true" historyLabel="BlogMapper.xml" index="15"/>
+<item historyLabel="BlogMapper.xml" index="15"/>
+<item historyLabel="Test.java" index="18">
+<position info="not_deleted" x="369" y="613"/>
+</item>
+<item historyLabel="Sample1.java" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AddUser.java" index="20">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="Test.java" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="IUserDao.java" index="22">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserDaoImpl.java" index="23">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="IUserService.java" index="24">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UserServiceImpl.java" index="25">
+<position info="not_deleted" x="524" y="0"/>
+</item>
+<item historyLabel="User.java" index="26">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Sample1.java" index="27">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AopTest.java" index="28">
+<position info="not_deleted" x="661" y="0"/>
+</item>
+<item historyLabel="IAopTest.java" index="29">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="config.properties" index="30">
+<position info="not_deleted" x="0" y="0"/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
