@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.thunisoft.test.Test&apos; to &apos;HibernateTest&apos;&#x0D;&#x0A;- Original project: &apos;hibernate_02&apos;&#x0D;&#x0A;- Original element: &apos;com.thunisoft.test.Test&apos;&#x0D;&#x0A;- Renamed element: &apos;com.thunisoft.test.HibernateTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Test&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.thunisoft.test{Test.java[Test" matchStrategy="1" name="HibernateTest" qualified="false" references="true" similarDeclarations="false" stamp="1492691319175" textual="false" version="1.0"/>
+</session>

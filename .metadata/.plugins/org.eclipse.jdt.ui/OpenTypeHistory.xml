@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=IO/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;com.sun.corba.se.impl.encoding(OSFCodeSetRegistry$Entry.class[Entry" modifiers="25" timestamp="1239114430000"/>
+<typeInfo handle="=MyBatiesTest/C:\/Users\/mengly\/Desktop\/jar包\/MyBatiesLib\/log4j-core-2.2.jar&lt;org.apache.logging.log4j.core.jackson(MapEntry.class[MapEntry" modifiers="48" timestamp="1431755176000"/>
+<typeInfo handle="=IO/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.util(HashMap$Entry.class[Entry" modifiers="8" timestamp="1239114430000"/>
+<typeInfo handle="=IO/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.io(InputStream.class[InputStream" modifiers="1057" timestamp="1239114430000"/>
+<typeInfo handle="=IO/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.io(OutputStream.class[OutputStream" modifiers="1057" timestamp="1239114430000"/>
+<typeInfo handle="=IO/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1239114430000"/>
+<typeInfo handle="=枚举/src&lt;{IEnum.java[IEnum" modifiers="513" timestamp="1498792159906"/>
+<typeInfo handle="=Collection/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.util(HashMap.class[HashMap" modifiers="33" timestamp="1239114430000"/>
+<typeInfo handle="=Collection/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1239114430000"/>
+<typeInfo handle="=Collection/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.io(Externalizable.class[Externalizable" modifiers="1537" timestamp="1239114430000"/>
+<typeInfo handle="=Collection/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.lang(Comparable.class[Comparable" modifiers="1537" timestamp="1239114430000"/>
+<typeInfo handle="=Collection/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.io(IOError.class[IOError" modifiers="33" timestamp="1239114430000"/>
+<typeInfo handle="=Collection/D:\/Tool\/MyEclipse\/Common\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.013\/jre\/lib\/rt.jar&lt;java.io(FileInputStream.class[FileInputStream" modifiers="33" timestamp="1239114430000"/>
+</typeInfoHistroy>

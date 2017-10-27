@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;User.hbm.xml&apos; to &apos;Integration_SpringAndHiberante/src&apos;&#x0D;&#x0A;- Original project: &apos;hibernate&apos;&#x0D;&#x0A;- Destination element: &apos;Integration_SpringAndHiberante/src&apos;&#x0D;&#x0A;- Original element: &apos;User.hbm.xml&apos;" description="Copy file" destination="=Integration_SpringAndHiberante/src" element1="src/hibernate/User.hbm.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1491986182795" units="0" version="1.0"/>
+</session>

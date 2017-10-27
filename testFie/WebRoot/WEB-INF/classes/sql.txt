@@ -1,0 +1,89 @@
+WITH T AS (
+	SELECT
+		mx.C_ZF_ID,
+		jbxx.N_ZFXH
+	FROM
+		DB_ZF.dbo.T_ZF_QMRS qs
+	LEFT JOIN DB_ZF.dbo.T_ZF_QMRS_MX mx ON qs.C_ID = mx.C_ZB_ID
+	LEFT JOIN DB_ZF.dbo.T_ZF zf ON mx.C_ZF_ID = zf.C_ID
+	LEFT JOIN bjscxt.DB_JY.dbo.T_ZF_JBXX jbxx ON jbxx.C_ZFBH = zf.C_ZFBH
+	WHERE
+		qs.C_SFYX = '1'
+	AND qs.C_NF = '2017'
+	AND qs.C_YF = '05'
+	AND qs.C_BMID = '31565558B3AD4A7C833CED7814B15EB5'
+	AND jbxx.N_ZFXH IS NOT NULL
+),
+ S AS (
+	SELECT
+		gwjb.N_ZFXH,
+		MIN (gwjb.D_SXSJ) AS jhksldrq -- 计划开始劳动日期 
+	FROM
+		T t
+	LEFT JOIN bjscxt.DB_SC.dbo.T_Ration_ZFGWJB gwjb ON t.N_ZFXH = gwjb.N_ZFXH
+	LEFT JOIN bjscxt.DB_SC.dbo.T_Ration_Station station ON gwjb.N_GWBH = station.N_XH
+	WHERE
+		(
+			(
+				gwjb.D_WXSJ >= gwjb.D_SXSJ
+				AND gwjb.D_SXSJ <= '2017-05-01'
+				AND gwjb.D_WXSJ >= '2017-05-01'
+			)
+			OR (
+				gwjb.D_SXSJ <= '2017-05-01'
+				AND gwjb.D_WXSJ IS NULL
+			)
+		)
+	AND gwjb.N_GWBH IS NOT NULL
+	AND station.N_DELX IS NOT NULL
+	GROUP BY
+		gwjb.N_ZFXH
+),
+ M AS (
+	SELECT
+		ldsc.N_ZFXH,
+		ldsc.N_DRQK,
+		SUM (ISNULL(ldsc.N_JKF, 0)) AS N_JKFZH
+	FROM
+		T t
+	LEFT JOIN bjscxt.DB_SC.dbo.T_Ration_ZFLDSC ldsc ON t.N_ZFXH = ldsc.N_ZFXH
+	WHERE
+		ldsc.N_YX = 1
+	AND ldsc.D_LDRQ >= '2017-05-01'
+	AND ldsc.D_LDRQ <= '2017-05-31'
+	AND t.N_ZFXH IS NOT NULL
+	GROUP BY
+		ldsc.N_ZFXH,
+		ldsc.N_DRQK
+) SELECT
+	t.C_ZF_ID AS zfId,
+	t.N_ZFXH,
+	m.N_DRQK AS jkflx,
+	-- 加扣分类型 
+	ISNULL(m.N_JKFZH, 0) AS jkfzh,
+	(
+		CASE
+		WHEN station.N_DELX = 1 THEN
+			11
+		WHEN station.N_DELX = 2
+		AND gwjb.N_DEJB = 1 THEN
+			21
+		WHEN station.N_DELX = 2
+		AND gwjb.N_DEJB = 2 THEN
+			22
+		WHEN station.N_DELX = 2
+		AND gwjb.N_DEJB = 3 THEN
+			23
+		END
+	) AS dglxjb -- 转换后的定岗类型和级别 
+FROM
+	T t
+LEFT JOIN S s ON t.N_ZFXH = s.N_ZFXH
+LEFT JOIN bjscxt.DB_SC.dbo.T_Ration_ZFGWJB gwjb ON s.N_ZFXH = gwjb.N_ZFXH
+AND s.jhksldrq = gwjb.D_SXSJ
+AND gwjb.N_GWBH IS NOT NULL
+LEFT JOIN bjscxt.DB_SC.dbo.T_Ration_Station station ON gwjb.N_GWBH = station.N_XH
+AND station.N_DELX IS NOT NULL
+LEFT JOIN M m ON t.N_ZFXH = m.N_ZFXH
+ORDER BY
+	C_ZF_ID

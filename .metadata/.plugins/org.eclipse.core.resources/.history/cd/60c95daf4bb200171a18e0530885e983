@@ -1,0 +1,17 @@
+package 原型模式;
+
+public class Test implements Cloneable{
+	
+	A aa = new A();
+
+}
+
+class A implements Cloneable{
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
+	
+}

@@ -1,0 +1,5 @@
+INDEX VERSION 1.126
+F:\Workspaces\TEST_MyEclipse 10\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\763441117.index
+\Hibernate\src
+F:\Workspaces\TEST_MyEclipse 10\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3936722499.index
+\testFie\src

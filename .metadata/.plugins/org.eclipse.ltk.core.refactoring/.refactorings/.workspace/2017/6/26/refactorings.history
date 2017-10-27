@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Enum&apos;" deleteContents="true" description="Delete resource &apos;Enum&apos;" element1="/Enum" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1498792002049"/>
+</session>

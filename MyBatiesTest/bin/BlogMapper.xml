@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BlogMapper">
+  <select id="selectBlog" parameterType="int" resultType="test.BlogMapper">
+    select * from blog 
+    <if test="id != null">
+     where id = #{id}
+    </if>
+  </select>
+  
+ <insert id="insertBlog">
+    insert into blog(id,name) values (#{id},#{name})
+ </insert>
+ 
+  <update id="updatetBlog">
+   update blog set name = #{name} where id = #{id}
+ </update>
+ 
+  <delete id="deleteBlog">
+    delete from blog where id = #{id}
+ </delete>
+  
+  <sql id="blogColumns"> 
+  ${replaceSql}.c_name 
+  </sql>
+  
+  <select id="selectReplaceSql" parameterType="int" resultType="test.BlogMapper">
+    select 
+    <!-- <include refid="blogColumns"><property name="replaceSql" value="t1"/></include>  -->
+    n_id id,
+    c_name name
+    from blog_test
+    where n_id = #{n_id}
+  </select>
+</mapper>
